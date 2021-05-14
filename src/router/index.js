@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Test from "@/views/test/Test"
 
 Vue.use(VueRouter)
 
@@ -31,10 +30,6 @@ const routes = [
         path: '/payment/subscriptions',
         name: 'Subscriptions',
         component: () => import(/* webpackChunkName: "payment" */ '../views/payment/Subscriptions.vue')
-      },
-      {
-        path: "/test",
-        component: Test
       }
     ]
   }
